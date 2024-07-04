@@ -130,7 +130,7 @@ class Attendance:
         update_btn=Button(btn_frame,text="Export csv",command=self.exportCsv,width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
         update_btn.grid(row=0,column=1)
 
-        delete_btn=Button(btn_frame,text="Update",width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        delete_btn=Button(btn_frame,text="Update",command=self.update_attendance,width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
         delete_btn.grid(row=0,column=2)
 
         reset_btn=Button(btn_frame,text="Reset",command=self.reset_data,width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
@@ -229,6 +229,31 @@ class Attendance:
         self.var_atten_time.set("")
         self.var_atten_date.set("")
         self.var_atten_attendance.set("")
+
+
+    def update_attendance(self):
+        attendance_id = self.var_atten_id.get()
+        roll = self.var_atten_roll.get()
+        name = self.var_atten_name.get()
+        department = self.var_atten_dep.get()
+        time = self.var_atten_time.get()
+        date = self.var_atten_date.get()
+        attendance_status = self.var_atten_attendance.get()
+        
+        selected_row = self.AttendanceReportTable.focus()
+
+        self.AttendanceReportTable.item(selected_row, values=(
+            self.var_atten_id.get(),
+            self.var_atten_roll.get(),
+            self.var_atten_name.get(),
+            self.var_atten_dep.get(),
+            self.var_atten_time.get(),
+            self.var_atten_date.get(),
+            self.var_atten_attendance.get()
+        ))
+
+        messagebox.showinfo("Success", "Attendance Updated Successfully!")
+        self.atten_roll.focus()
 
 if __name__=="__main__":
     root=Tk()

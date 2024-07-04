@@ -15,7 +15,7 @@ class Face_Recognition:
     def  __init__(self,root):
         self.root = root
         self.root.geometry("1530x790+0+0")
-        self.root.title("face Recognition System")
+        self.root.title("Face Recognition System")
 
 
         title_lbl=Label(self.root,text="FACE RECOGNITION",font=("times new roman",35,"bold"),bg="white",fg="green")
@@ -127,6 +127,7 @@ class Face_Recognition:
         cv2.destroyAllWindows()
 
             
+
 
 
 

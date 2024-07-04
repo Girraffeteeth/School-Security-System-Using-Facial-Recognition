@@ -6,6 +6,7 @@ import mysql.connector
 import cv2
 
 
+
 class Student:
     def __init__(self, root):
         self.root = root
@@ -530,7 +531,7 @@ class Student:
                         break            
                 cap.release()
                 cv2.destroyAllWindows()
-                messagebox.showinfo("Result","Generating data sets compled!!!!")
+                messagebox.showinfo("Result","Generating data sets completed!!!!")
                     
             except Exception as e:
                 messagebox.showerror("Error", f"Due To: {str(e)}", parent=self.root)

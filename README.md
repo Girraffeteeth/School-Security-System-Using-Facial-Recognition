@@ -15,6 +15,7 @@ Machine Learning and Computer Vision
 
 ## Results
  Receiver Operating Characteristics (ROC) and Area Under Curve (AUC)
+   
    ![image](https://github.com/Girraffeteeth/School-Security-System-Using-Facial-Recognition/assets/91562191/1a4e4ed0-a57a-401c-bbf5-7e14c9a4c7df)
 
 This plot shows that class 'Hritesh' returns the highest AUC of 0.97, hence indicating excellent classification performance for this class, while classes like 'Karim' and 'Krishna' returned a pretty poor AUC value of 0.61, hence their poor classification performance. The ROC curve helps to draw competition between TPR and FPR for each single class. The top-left corner has good classification performance since this point maximizes the rate of true positives with a minimum false positive rate. 

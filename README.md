@@ -23,4 +23,7 @@ This plot shows that class 'Hritesh' returns the highest AUC of 0.97, hence indi
 
 Our project demonstrates variable performance across different classes, with precision ranging from 0.50 to 1.00, recall from 0.33 to 1.00, and F1 scores from 0.33 to 0.94, while achieving an overall accuracy of 0.75, indicating robust performance in certain scenarios but room for improvement in others.
 
+## Research Paper DOI 
+https://doi.org/10.36948/ijfmr.2024.v06i04.24527
+
 
